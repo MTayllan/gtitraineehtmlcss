@@ -1,0 +1,83 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*** HEADER ***/
+header{
+  position: fixed;
+  background: rgba(0,0,0, 0.5);
+  width: 100%;
+  height: auto;
+  top:0;
+  overflow: hidden;
+  padding: 30px;
+  z-index: 10;
+}
+
+header ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header ul li{
+  float: right;
+  padding: 0 5px;
+}
+
+header ul li a{
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+header ul li a:hover{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logo{
+  float: left;
+}
+
+
+.banner{
+  position: relative;
+  display: inline-block;
+}
+
+.banner-img{
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: brightness(0.6);
+}
+
+.banner .banner-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  transform: translate(-50%,-50%);
+}
+
+.banner h1{
+  text-transform: uppercase;
+  color: white;
+  text-shadow: #000 2px 2px 2px;
+  font-size: 50px;
+}
+
+.banner button{
+  text-transform: uppercase;
+  color: white;
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 10px;
+  font-size: 25px;
+}
+
+/* SECTION TRAINEE */
