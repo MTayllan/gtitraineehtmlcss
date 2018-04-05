@@ -1,0 +1,54 @@
+@media screen and (max-width: 600px) {
+
+  /* NAVBAR */
+
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .navbar.responsive .menu{
+    display: block;
+  }
+
+  .navbar.responsive .menu a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .navbar{  
+    padding: 5px;  
+    min-height: 30px;  
+  }
+
+  .navbar a:not(.icon){
+    font-size: 12px;
+  }
+
+  /* BANNER */
+  .banner-content h1{
+    font-size: 20px;
+  }
+
+.banner-content button{
+  font-size: 12px;
+  padding: 2px 0;
+  margin: 1px;
+  width: 140px;
+  font-weight: 300;
+}
+
+.banner-content img{
+  width: 13px;
+  height: auto;
+}
+
+}
