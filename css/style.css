@@ -3,6 +3,10 @@ body{
   margin: 0;
 }
 
+section:not(.banner){
+  padding: 0 15px;
+  margin: 20px 0;
+}
 
 /* NAVBAR V1 */
 
@@ -90,6 +94,32 @@ header{
   font-weight: 400;
 }
 
+/* SECTIONS */
+section h2{
+  color: #F16557;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 35px;
+}
+
+section p{
+  text-align: justify;
+  color: #222;
+}
+
+/* MATERIAL */
+.material img{
+  float: left;
+  margin-right: 30px;
+  width: 100%;
+  max-width: 330px;
+  height: auto;
+}
+
+.material p{
+  font-size: 13px;
+  margin-right: 40px;
+}
 
 
 /* Outras modificações */
@@ -100,6 +130,18 @@ header{
 .container{
   margin-right: auto;
   margin-left: auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.visible-xs{
+  display: none;
+}
+
+.hidden-xs{
+  display: block;
+}
+
+.clearfix {
+  overflow: auto;
 }
