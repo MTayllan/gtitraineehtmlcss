@@ -38,17 +38,47 @@
     font-size: 20px;
   }
 
-.banner-content button{
-  font-size: 12px;
-  padding: 2px 0;
-  margin: 1px;
-  width: 140px;
-  font-weight: 300;
-}
+  .banner-content button{
+    font-size: 12px;
+    padding: 2px 0;
+    margin: 1px;
+    width: 140px;
+    font-weight: 300;
+  }
 
-.banner-content img{
-  width: 13px;
-  height: auto;
-}
+  .banner-content img{
+    width: 13px;
+    height: auto;
+  }
+
+  /* MATERIAL */
+  .material h2{
+    text-align: center;
+  }
+
+  .material p{
+    margin: 20px 10px;
+  }
+
+  .material img{
+    float: none;
+  }
+
+  .clearfix {
+    overflow: none;
+  }
+
+  /* Outras modificacoes */
+  .visible-xs{
+    display: block;
+  }
+
+  .hidden-xs{
+    display: none;
+  }
+
+  .clearfix {
+    overflow: visible;
+  }
 
 }
