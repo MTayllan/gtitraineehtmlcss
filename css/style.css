@@ -160,7 +160,6 @@ section p{
 .post-box-top img{
   height:100%;
   width: auto;
-  max-width: 200px;
   max-height: 165px; 
   display: block;
   margin: auto;
@@ -212,7 +211,7 @@ section p{
 }
 
 .htmlcss .post-box-top{
-  background: #d45944;
+  background: #4dd2ff;
 }
 
 .javascript .post-box-top{
