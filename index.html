@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
+<head>      
 
   <!-- METAINFO -->
   <meta charset="utf-8">
@@ -13,6 +13,9 @@
   <title>Trainee GTI</title>
 
   <!-- STYLES -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/alert.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/style-mobile.css">
 
@@ -20,9 +23,22 @@
   <link rel="icon" href="images/ico.png">
 
   <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500" rel="stylesheet"> 
 </head>
 <body>
+
+  <div id="alerta" hidden="">
+         <div class="title">Receba Nossas Novidades <i class="fa fa-times" onclick="toggleAlert()"></i></div>
+         <div class="body">
+            <form id="novidadesform" name="contact-form" method="POST">
+               <input type="text" name="email" placeholder="Digite seu email">
+               <button type="submit">Enviar</button>
+            </form>
+            <div class="resultado"></div>
+         </div>
+      </div>
+  <div id="contador"></div>
 
   <header>
     <div class="navbar" id="navbar">
@@ -48,8 +64,8 @@
     </div>
     <div class="banner-content">
       <h1><img src="images/icone-header.png"> APRENDA A DESENVOLVER COM A GTi JR.</h1>
-      <button>HTML 5 + CSS3 + JS</button>
-      <button>Ruby On Rails</button>
+      <a href="#html-css-java"><button>HTML 5 + CSS3 + JS</button></a>
+      <a href="#ruby-rails"><button>Ruby On Rails</button></a>
     </div>
   </section>
 
@@ -62,7 +78,7 @@
 
   <hr>
 
-  <section class="basic">
+  <section class="basic"  id="html-css-java">
     <h2> HTML 5 | CSS3 | JAVASCRIPT </h2>
     <div class="post-box html5">
       <div class="post-box-top">
@@ -75,7 +91,7 @@
         <button class="estudar">Estudar Agora</button>
       </div>      
     </div>
-    <div class="post-box html5">
+    <div class="post-box tooltip html5">
       <div class="post-box-top">
         <img src="images/html.png">
         <span class="description">Lista de Livros</span>
@@ -114,7 +130,7 @@
 
   <hr>
 
-  <section class="basic ruby-rails">
+  <section class="basic" id="ruby-rails">
     <h2 class="brick-red"> Ruby On Rails </h2>
     <div class="post-box ruby">
       <div class="post-box-top">
@@ -149,7 +165,7 @@
         <button class="estudar">Estudar Agora</button>
       </div>      
     </div>
-    <div class="post-box rails">
+    <div class="post-box  rails">
       <div class="post-box-top">
         <img src="images/rails.png">
         <span class="description">HTML 5 - Introdução</span>
@@ -163,6 +179,8 @@
     <button class="button-black">VER +</button>     
   </section>
 
+  <footer> <span>Desenvolvido por Tayllan @2018</span></footer>
+
 
   <script type="text/javascript">
     
@@ -174,8 +192,16 @@
           x.className = "navbar";
       }
     }
-
   </script>
+
+  <!-- BIBLIOTECA JQUERY -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <!-- BIBLIOTECA JQUERY UI -->
+  <script src="js/jquery-ui.js"></script>
+  <!-- BIBLIOTECA TOASTR (notificacao personalizada) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.js"></script>
+  <!-- MEU SCRIPT -->
+  <script type="text/javascript" src="js/script.js"></script>
 
 </body>
 </html>
